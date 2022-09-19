@@ -1,7 +1,6 @@
 import React from "react";
 import { Image, StyleSheet, useWindowDimensions, View } from "react-native";
 import { RootNavigation } from "./navigation/RootNavigation";
-import { HomeScreenTabs } from "./screens/HomeScreen/HomeScreenTabs";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
