@@ -1,6 +1,7 @@
 import React from "react";
 import { Image, StyleSheet, useWindowDimensions, View } from "react-native";
 import { RootNavigation } from "./navigation/RootNavigation";
+import { HomeScreenTabs } from "./screens/HomeScreen/HomeScreenTabs";
 
 export default function App() {
   const { height, width } = useWindowDimensions();
@@ -8,11 +9,16 @@ export default function App() {
   return (
     <View style={styles.container}>
       <RootNavigation />
-      <Image
-        source={require("./screenshots/home-discovery.jpeg")}
-        resizeMode={"contain"}
+      <View
         style={{ width, height, position: "absolute", opacity: 0 }}
-      />
+        pointerEvents={"none"}
+      >
+        <Image
+          source={require("./screenshots/home-discovery.jpeg")}
+          resizeMode={"contain"}
+          style={{ width, height }}
+        />
+      </View>
     </View>
   );
 }

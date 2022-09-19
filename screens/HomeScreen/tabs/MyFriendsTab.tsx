@@ -1,7 +1,7 @@
-import React from "react";
 import { Text, View } from "react-native";
+import * as React from "react";
 
-export const HomeScreen = () => (
+export const MyFriendsTab = () => (
   <View
     style={{
       flex: 1,
@@ -10,6 +10,6 @@ export const HomeScreen = () => (
       backgroundColor: "papayawhip",
     }}
   >
-    <Text>🦭</Text>
+    <Text>🦭🦭🦭🦭🦭🦭</Text>
   </View>
 );
