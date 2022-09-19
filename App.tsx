@@ -11,7 +11,7 @@ export default function App() {
       <Image
         source={require("./screenshots/home-discovery.jpeg")}
         resizeMode={"contain"}
-        style={{ width, height, position: "absolute", opacity: 0.2 }}
+        style={{ width, height, position: "absolute", opacity: 0 }}
       />
     </View>
   );
