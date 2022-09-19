@@ -1,12 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import {Image, StyleSheet, Text, useWindowDimensions, View} from 'react-native';
+import React from "react";
+import { Image, StyleSheet, useWindowDimensions, View } from "react-native";
+import { RootNavigation } from "./navigation/RootNavigation";
 
 export default function App() {
-  const { height, width} = useWindowDimensions();
+  const { height, width } = useWindowDimensions();
 
   return (
     <View style={styles.container}>
-      <Image source={require("./screenshots/home-discovery.jpeg")} resizeMode={"contain"} style={{ width, height}}/>
+      <RootNavigation />
+      <Image
+        source={require("./screenshots/home-discovery.jpeg")}
+        resizeMode={"contain"}
+        style={{ width, height, position: "absolute", opacity: 0.2 }}
+      />
     </View>
   );
 }
@@ -14,8 +20,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
   },
 });
