@@ -1,7 +1,9 @@
 import { View } from "react-native";
 import * as React from "react";
+import { ActivityList } from "../../../components/ActivityList/ActivityList";
 
-// TODO(Henry): Next.
 export const DiscoveryTab = () => (
-  <View style={{ flex: 1, backgroundColor: "#673ab7" }} />
+  <View style={{ flex: 1, backgroundColor: "#000" }}>
+    <ActivityList />
+  </View>
 );

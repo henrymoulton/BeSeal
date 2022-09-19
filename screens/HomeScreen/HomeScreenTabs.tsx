@@ -18,7 +18,7 @@ const renderScene = SceneMap({
 export const HomeScreenTabs = () => {
   const layout = useWindowDimensions();
 
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = React.useState(1);
   const [routes] = React.useState([
     { key: "myfriends", title: "My Seal Pals" },
     { key: "discovery", title: "Discovery" },
